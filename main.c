@@ -32,7 +32,7 @@ main (int   argc,
   return 0;
 }
 
-void on_lbaraha_main2_destroy()
+void on_lbaraha_main_destroy()
 {
     int i;
     char str[50];
