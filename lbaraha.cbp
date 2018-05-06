@@ -29,15 +29,19 @@
 			</Target>
 		</Build>
 		<Compiler>
-			<Add option="`pkg-config gtk+-3.0 --cflags gmodule-2.0`" />
+			<Add option="`pkg-config gtk+-3.0 --cflags gmodule-2.0 glib-2.0`" />
 			<Add option="-Wall" />
 		</Compiler>
 		<Linker>
-			<Add option="`pkg-config gtk+-3.0 --libs gmodule-2.0`" />
+			<Add option="`pkg-config gtk+-3.0 --libs gmodule-2.0 glib-2.0`" />
 		</Linker>
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="translateLib.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="translateLib.h" />
 		<Unit filename="transliterator_builder.glade" />
 		<Extensions>
 			<code_completion />

@@ -1,4 +1,6 @@
 #include <gtk/gtk.h>
+#include <wchar.h>
+#include "translateLib.h"
 
 int
 main (int   argc,
@@ -9,6 +11,7 @@ main (int   argc,
   GError *error = NULL;
 
   gtk_init (&argc, &argv);
+
 
   /* Construct a GtkBuilder instance and load our UI description */
   builder = gtk_builder_new ();
@@ -32,12 +35,4 @@ main (int   argc,
   return 0;
 }
 
-void on_lbaraha_main_destroy()
-{
-    int i;
-    char str[50];
-    i = 15 + 6;
-    sprintf(str,"the i is %i",i);
-    g_print(str);
-    gtk_main_quit();
-}
+

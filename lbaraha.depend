@@ -1,6 +1,8 @@
 # depslib dependency file v1.0
-1525533488 source:/mnt/d/opt/transliterate/lbaraha/main.c
+1525623467 source:/mnt/d/opt/transliterate/lbaraha/main.c
 	<gtk/gtk.h>
+	<wchar.h>
+	"translateLib.h"
 
 1501653165 /usr/include/gtk-2.0/gtk/gtk.h
 	<gdk/gdk.h>
@@ -3962,4 +3964,33 @@
 	<gtk/gtkseparator.h>
 
 1516895662 /usr/include/gtk-3.0/gtk/gtk-autocleanups.h
+
+1525606709 /mnt/d/opt/transliterate/lbaraha/translateLib.h
+	<glib.h>
+
+1525608219 source:/mnt/d/opt/transliterate/lbaraha/translateLib.c
+	"translateLib.h"
+	<glib.h>
+	<wchar.h>
+
+1525620565 source:/mnt/d/opt/transliterate/lbaraha/converter.c
+	<wchar.h>
+	<iconv.h>
+
+1525620656 source:/mnt/d/opt/transliterate/lbaraha/inputHandler.c
+	<gtk/gtk.h>
+	"translateLib.h"
+	<wchar.h>
+	<iconv.h>
+	"utf8.h"
+
+1214642859 /mnt/d/opt/transliterate/lbaraha/utf8.h
+	<sys/types.h>
+	<wchar.h>
+
+1525623313 source:/mnt/d/opt/transliterate/lbaraha/utf8.c
+	<sys/types.h>
+	<wchar.h>
+	<arpa/inet.h>
+	"utf8.h"
 
