@@ -35,14 +35,30 @@
 		<Linker>
 			<Add option="`pkg-config gtk+-3.0 --libs gmodule-2.0 glib-2.0`" />
 		</Linker>
+		<Unit filename="inputHandler.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="inputHandler.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
+		<Unit filename="strctbrhDev.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="strctbrhDev.h" />
+		<Unit filename="string_utils.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="string_utils.h" />
 		<Unit filename="translateLib.c">
 			<Option compilerVar="CC" />
 		</Unit>
 		<Unit filename="translateLib.h" />
 		<Unit filename="transliterator_builder.glade" />
+		<Unit filename="utf8.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="utf8.h" />
 		<Extensions>
 			<code_completion />
 			<debugger />
