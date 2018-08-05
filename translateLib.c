@@ -25,18 +25,15 @@ GHashTable* createBrhDev()
 
 
 
-void populateBrhDev()
+void populateBrhDev(const char * inpLang,const char * outLang)
 {
-    int i = 0;
-    for (i = 0 ; i < ENTERED_WORDS  ; i ++){
-        g_hash_table_insert(hBrhDev,strctbrhDev_array[i].inpBrh,&(strctbrhDev_array[i]));
-    }
+    insert_into_ghashtable(hBrhDev,inpLang,outLang);
 }
 
 
-char* brh_get_value(const char * brh)
+char* brh_get_value(const char * brh,const char * inpLang,const char * outLang)
 {
-    initialize_hashtable();
+    initialize_hashtable(inpLang,outLang);
     next_conv_char(NULL,NULL,NULL,NULL,1);
     char* loop_brh = (char *)brh;
     int offset = 0;
@@ -68,10 +65,10 @@ char* brh_get_value(const char * brh)
     return outStr;
 }
 
-void initialize_hashtable(){
+void initialize_hashtable(const char * inpLang,const char * outLang){
     if (hBrhDev == NULL){
         hBrhDev = createBrhDev();
-        populateBrhDev();
+        populateBrhDev(inpLang,outLang);
     }
 }
 

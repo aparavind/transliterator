@@ -10,6 +10,6 @@
 char* brh_get_value(const char * brh);
 
 
-void initialize_hashtable();
+void initialize_hashtable(const char * inpLang,const char * outLang);
 int next_conv_char(char* brh,char** outStr,int * remove_last_char, char* tempChar, int resetAll);
 int get_matching_i(char* brh,int hasMinus,strctbrhDev** adx);

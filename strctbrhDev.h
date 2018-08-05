@@ -1,7 +1,7 @@
 #ifndef STRCTBRHDEV_H_INCLUDED
 #define STRCTBRHDEV_H_INCLUDED
 
-#define ENTERED_WORDS 99 
+#define ENTERED_WORDS 99
 
 typedef struct strctbrhDev {
 	char inpBrh[13];
@@ -15,5 +15,8 @@ typedef struct strctbrhDev {
 } strctbrhDev;
 
 extern strctbrhDev strctbrhDev_array[ENTERED_WORDS];
+
+void insert_into_ghashtable(GHashTable* hBrhDev,const char * inpLang,const char * outLang);
+
 
 #endif
